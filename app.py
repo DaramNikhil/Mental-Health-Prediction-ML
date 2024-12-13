@@ -6,7 +6,8 @@ import seaborn as sns
 import pickle
 
 
-model = joblib.load("model\RandomForestClassifier.joblib")
+model = joblib.load("model/RandomForestClassifier.joblib")
+
 
 def handle_gender(gender):
     return 1 if gender.lower() == 'male' else 0
